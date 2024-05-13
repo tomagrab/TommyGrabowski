@@ -444,6 +444,28 @@ video {
   display: none;
 }
 
+:root {
+  --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --primary: 0 0% 98%;
+  --primary-foreground: 240 5.9% 10%;
+  --secondary: 240 3.7% 15.9%;
+  --secondary-foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --accent: 240 3.7% 15.9%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --ring: 240 4.9% 83.9%;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -548,6 +570,38 @@ video {
   position: static;
 }
 
+.flex {
+  display: flex;
+}
+
+.h-4 {
+  height: 1rem;
+}
+
+.h-40 {
+  height: 10rem;
+}
+
+.w-40 {
+  width: 10rem;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-items-center {
+  justify-items: center;
+}
+
 .bg-backdrop {
   --tw-bg-opacity: 1;
   background-color: rgb(9 12 16 / var(--tw-bg-opacity));
@@ -608,6 +662,11 @@ video {
   background-color: rgb(57 197 207 / var(--tw-bg-opacity));
 }
 
+.bg-darkgray {
+  --tw-bg-opacity: 1;
+  background-color: rgb(72 79 88 / var(--tw-bg-opacity));
+}
+
 .bg-green {
   --tw-bg-opacity: 1;
   background-color: rgb(63 185 80 / var(--tw-bg-opacity));
@@ -631,11 +690,6 @@ video {
 .bg-yellow {
   --tw-bg-opacity: 1;
   background-color: rgb(210 153 34 / var(--tw-bg-opacity));
-}
-
-.bg-darkgray {
-  --tw-bg-opacity: 1;
-  background-color: rgb(72 79 88 / var(--tw-bg-opacity));
 }
 
 .text-white {
@@ -677,12 +731,12 @@ video {
   /* "auto" or "thin" */
   scrollbar-color: #888 #f1f1f1;
   /* thumb and track color */
+  font-family: "Inter", sans-serif;
 }
 
 body {
-  --tw-bg-opacity: 1;
-  background-color: rgb(9 12 16 / var(--tw-bg-opacity));
-  font-family: "Inter", sans-serif;
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
 }
 
 .active {
