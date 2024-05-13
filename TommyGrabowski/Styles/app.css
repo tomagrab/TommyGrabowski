@@ -4,7 +4,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap");
 
-
 @layer base {
   :root {
     --background: 240 10% 3.9%;
@@ -61,7 +60,7 @@ body {
 }
 
 .active {
-  @apply bg-blue/90;
+  @apply bg-green/90;
 }
 
 .align-right {
@@ -78,11 +77,11 @@ body {
 }
 
 .btn-primary {
-  @apply bg-blue hover:bg-blue/90;
+  @apply bg-green hover:bg-green/90;
 }
 
 .btn-secondary {
-  @apply bg-green hover:bg-green/80;
+  @apply bg-blue hover:bg-blue/80;
 }
 
 .btn-destructive {
@@ -94,7 +93,7 @@ body {
 }
 
 .btn-link {
-  @apply text-brightGreen underline-offset-4 hover:underline;
+  @apply text-blue hover:text-blue/90 underline-offset-4 hover:underline;
 }
 
 .btn-sm {
