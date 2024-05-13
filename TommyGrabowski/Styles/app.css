@@ -1,0 +1,209 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap");
+
+/* For Chrome, Edge, and Safari */
+::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* color of the tracking area */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* color of the scroll thumb */
+  border-radius: 10px; /* roundness of the scroll thumb */
+  border: 3px solid #f1f1f1; /* creates padding around the scroll thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* color of the scroll thumb when hovered over */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin; /* "auto" or "thin" */
+  scrollbar-color: #888 #f1f1f1; /* thumb and track color */
+}
+
+body {
+  @apply bg-backdrop;
+  font-family: "Inter", sans-serif;
+}
+
+.active {
+  @apply bg-blue/90;
+}
+
+.align-right {
+  @apply flex justify-end;
+}
+
+.btn,
+.btn-home {
+  @apply inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-white;
+}
+
+.btn-home {
+  @apply font-bold text-white drop-shadow-lg;
+}
+
+.btn-primary {
+  @apply bg-blue hover:bg-blue/90;
+}
+
+.btn-secondary {
+  @apply bg-green hover:bg-green/80;
+}
+
+.btn-destructive {
+  @apply bg-red hover:bg-red/90;
+}
+
+.btn-outline {
+  @apply border border-input bg-background;
+}
+
+.btn-link {
+  @apply text-brightGreen underline-offset-4 hover:underline;
+}
+
+.btn-sm {
+  @apply h-9 rounded-md px-3;
+}
+
+.btn-base {
+  @apply h-10 px-4 py-2;
+}
+
+.btn-lg {
+  @apply h-11 rounded-md px-8;
+}
+
+.btn-icon {
+  @apply h-10 w-10;
+}
+
+.card {
+  @apply rounded-lg border shadow-sm;
+}
+
+.card-content {
+  @apply p-6 pt-0;
+}
+
+.card-description {
+  @apply text-sm;
+}
+
+.card-footer {
+  @apply flex items-center p-6 pt-0;
+}
+
+.card-header {
+  @apply flex flex-col space-y-1.5 p-6;
+}
+
+.card-title {
+  @apply text-2xl font-semibold leading-none tracking-tight;
+}
+
+.checkbox {
+  @apply h-4 w-4 shrink-0 rounded-sm border ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50;
+}
+
+.error-text {
+  @apply text-red;
+}
+
+.form {
+  @apply flex flex-col gap-2 shadow max-w-sm p-4 rounded-md;
+}
+
+.form-control-col {
+  @apply flex flex-col gap-2;
+}
+
+.form-control-row {
+  @apply flex items-center justify-between;
+}
+
+hr {
+  @apply border-b border-blue my-4;
+}
+
+.modal-container {
+  @apply min-w-full min-h-full flex items-center justify-center;
+}
+
+.modal-overlay {
+  @apply fixed inset-0 bg-black bg-opacity-50 z-50;
+}
+
+.modal {
+  @apply bg-white rounded-lg shadow-lg max-w-lg mx-auto p-4 z-10;
+}
+
+.modal-header {
+  @apply flex items-center justify-between;
+}
+
+.modal-title {
+  @apply text-xl font-semibold text-darkgray;
+}
+
+.modal-body {
+  @apply py-4 text-darkgray;
+}
+
+.modal-footer {
+  @apply flex justify-end gap-4 p-4;
+}
+
+.modal-close-button {
+  @apply text-lg cursor-pointer;
+}
+
+.input {
+  @apply flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 bg-white;
+}
+
+.invalid {
+  @apply border-red focus:ring-red;
+}
+
+.textarea {
+  @apply flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50;
+}
+
+.quickgrid > tbody > tr {
+  @apply rounded-md transition-colors duration-300 overflow-hidden;
+}
+
+.quickgrid > tbody > tr:not(.modal-overlay):hover {
+  @apply bg-darkgray text-white;
+}
+
+.quickgrid > tbody > tr:hover > td > a {
+  @apply text-blue;
+}
+
+.quickgrid > tbody > tr:hover > td > button {
+  @apply text-red;
+}
+
+.quickgrid > tbody > tr > td {
+  @apply p-2;
+}
+
+.quickgrid > tbody > tr > td:first-child {
+  @apply rounded-tl-md rounded-bl-md;
+}
+
+.quickgrid > tbody > tr > td:last-child {
+  @apply rounded-tr-md rounded-br-md;
+}
