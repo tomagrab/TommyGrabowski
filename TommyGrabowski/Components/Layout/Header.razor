@@ -1,5 +1,9 @@
-<header class="flex items-center h-16">
-    <div class="flex w-1/2"></div>
+<header class="flex items-center h-16 px-4">
+    <div class="flex justify-start w-1/2">
+        <button class="h-8 w-8 flex justify-center items-center p-2 border rounded-md hover:bg-brightBlack transition-colors duration-300">
+            <i class="fa-solid fa-bars text-white"></i>
+        </button>
+    </div>
     <div class="flex flex-shrink-0">
         <h1>
             <a href="/">Tommy Grabowski</a>
@@ -7,3 +11,8 @@
     </div>
     <div class="flex w-1/2"></div>
 </header>
+
+@code
+{
+    public EventCallback<bool> ShowSidebar { get; set; }
+}
