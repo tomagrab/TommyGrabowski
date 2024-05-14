@@ -606,6 +606,14 @@ video {
   height: 2rem;
 }
 
+.h-\[calc\] {
+  height: calc;
+}
+
+.h-\[calc\(100dvh-4rem\)\] {
+  height: calc(100dvh - 4rem);
+}
+
 .w-0 {
   width: 0px;
 }
@@ -620,6 +628,10 @@ video {
 
 .w-8 {
   width: 2rem;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
 }
 
 .flex-shrink-0 {
@@ -652,6 +664,14 @@ video {
 
 .gap-2 {
   gap: 0.5rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.overflow-auto {
+  overflow: auto;
 }
 
 .overflow-hidden {
@@ -799,9 +819,18 @@ video {
   padding-right: 1rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .font-bold {
