@@ -5,7 +5,7 @@
 <div class="flex flex-col gap-4">
     <h1 class="text-3xl font-bold text-center">About | TG</h1>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
-        <div class="col-span-full border rounded-md p-4">
+        <div class="col-span-full rounded-md p-4">
             <h2 class="text-lg font-bold">The Website</h2>
             <p class="pt-4">
                 This website is a personal project created by Tommy Grabowski (an idiot). The website is built using
@@ -52,7 +52,7 @@
                 The website is a work in progress and will be updated as I learn more about Blazor and Tailwind CSS. The website is a place for me to experiment with different features and designs. The website is also a place for me to share my thoughts and ideas with the world (as if anyone wants to read anout those).
             </p>
         </div>
-        <div class="border rounded-md p-4">
+        <div class="rounded-md p-4">
             <h2 class="text-lg font-bold">Working with Blazor</h2>
             <p class="pt-2">
                 As I previously said, Blazor is a
@@ -78,109 +78,171 @@
                 is a very valid question I have asked myself numerous times throughout
                 this project. The answer to that question is another question: "If I always did the easy thing, then how could I grow as a developer?"
             </p>
+            <p class="pt-4">
+                My biggest struggle as a developer is imposter syndrome. Sure, I could stand up a web app in a day or two with Next.js, but I felt like I hit
+                a wall in my learning and growth with Next.js. I never mastered Next.js or learned every single one of it's ins and outs, however, I felt like
+                it abstacted away too much and I stopped growing as a developer. I'm sure I'll eventually hit that same wall with Blazor, but for now it is new,
+                frustrating, and exciting.
+            </p>
         </div>
-        <div class="border rounded-md p-4">
-            
+        <div class="rounded-md p-4">
+            <h2 class="text-lg font-bold">Working with Tailwind CSS</h2>
+            <p class="pt-2">
+                Tailwind CSS is an absolute pleasure to work with. The utility-first
+                approach is a game changer and makes styling a breeze. The documentation
+                is very well written and easy to follow. The Tailwind team has done
+                an excellent job of providing examples and explanations for every
+                utility class. The Tailwind team has also done an excellent job of
+                providing a plethora of plugins to make Tailwind even more powerful.
+            </p>
+            <p class="pt-4">
+                The only downside to Tailwind is that it can be a bit overwhelming
+                at first. There are so many utility classes that it can be difficult
+                to know which one to use. The best way to get around this is to
+                use the Tailwind documentation and to use the
+                <a
+                    href="https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss"
+                    class="btn-link"
+                >
+                    Tailwind CSS IntelliSense
+                </a> extension for Visual Studio Code. The extension provides
+                autocompletion for all of the utility classes and makes it very easy
+                to find the right class for the job.
+            </p>
+            <p class="pt-4">
+                The above paragraphs were written by AI, but I stand by what SkyNet said. Now for my own words; I love TailwindCSS. I absolutley adore it. This may seem
+                like backtracking because I previously said that I disliked too much abstraction. TailwindCSS is an abstraction of pure CSS.
+            </p>
+            <p class="pt-4">
+                I guess where I give a pass here is that you still need to have an intimate knowledge of CSS to use TailwindCSS effectively. You still need to know
+                what a flexbox is and how to use it. Also, I would call Tailwind a "low level" abstraction. It's just prewritten CSS classes.
+            </p>
         </div>
-        <div class="border rounded-md p-4">
+        <div class="rounded-md p-4">
+            <h2 class="text-lg font-bold">Working with SQL Server</h2>
+            <p class="pt-2">
+                SQL Server is another
+                <a
+                    href="https://www.netlingo.com/word/pita.php"
+                    class="btn-link"
+                >
+                    PITA</a>. I am used to working with
+                <a
+                    href="https://www.postgresql.org/"
+                    class="btn-link"
+                >
+                    PostgreSQL
+                </a> (specifically with
+                <a
+                    href="https://neon.tech/"
+                    class="btn-link"
+                >
+                    Neon</a>)
+                along with
+                <a
+                    href="https://www.prisma.io/"
+                    class="btn-link"
+                >
+                Prisma</a>. Using Neon with Prisma makes standing up a database for your web app ridiculously easy, but that's the problem. It's too easy.
+                Both of those tools abstract away too much complexity and control from your database. Good luck trying to get into the nitty gritty of your
+                queries to optimize them with Prisma.
+            </p>
+            <p class="pt-4">
+                Of course, you could just not use with Prisma, but that leaves the problem of relying on Neon to host your database. What if Neon has an outage?
+                What if Neon goes out of business? What if Neon decides to jack up their prices? What if Neon decides to change their terms of service? These
+                are too many what ifs that are out of the developers control.
+            </p>
+            <p class="pt-4">
+                SQL Server gives the complexity and control back to the developer. Honestly, its almost too much complexity and control for a newbie. I have spent
+                countless hours trying to figure out how to do the simplest things with SQL Server that would have taken me minutes with Prisma. However, those were
+                hours well spent because I was always learning something. That learning gave me much more confidence as a developer and slowly started to errode that pesky
+                imposter syndrome.
+            </p>
+        </div>
+        <div class="rounded-md p-4 lg:col-span-full">
             <h2 class="text-lg font-bold">The Color Palatte</h2>
             <p class="py-4">
                 The color palatte is inspired by GitHub. The colors are used to create a dark theme for the website.
             </p>
-            <div class="flex flex-col border rounded-md overflow-hidden text-white">
-                <div class="bg-backdrop">
+            <div class="grid grid-cols-4 rounded-md overflow-hidden text-white">
+                <div class="bg-backdrop flex items-center justify-center">
                     <p class="p-4 text-center">
-                        Backdrop
+                        Backdrop: #010409
                     </p>
                 </div>
-                <div class="bg-darkgray">
+                <div class="bg-darkblue flex items-center justify-center">
                     <p class="p-4 text-center">
-                        Dark Gray
+                        Dark Blue: #161b22
                     </p>
                 </div>
-                <div class="bg-darkblue">
+                <div class="bg-gray flex items-center justify-center">
                     <p class="p-4 text-center">
-                        Dark Blue
+                        Gray: #6e7681
                     </p>
                 </div>
-                <div class="bg-blue">
+                <div class="bg-brightWhite text-black flex items-center justify-center">
                     <p class="p-4 text-center">
-                        Blue
+                        Bright White: #f0f6fc
                     </p>
                 </div>
-                <div class="bg-brightBlack">
+                <div class="bg-blue flex items-center justify-center">
                     <p class="p-4 text-center">
-                        Bright Black
+                        Blue: #58a6ff
                     </p>
                 </div>
-                <div class="bg-brightBlue">
+                <div class="bg-brightBlue flex items-center justify-center">
                     <p class="p-4 text-center">
-                        Bright Blue
+                        Bright Blue: #79c0ff
                     </p>
                 </div>
-                <div class="bg-brightCyan">
+                <div class="bg-cyan flex items-center justify-center">
                     <p class="p-4 text-center">
-                        Bright Cyan
+                        Cyan: #39c5cf
                     </p>
                 </div>
-                <div class="bg-brightGreen">
+                <div class="bg-brightCyan flex items-center justify-center">
                     <p class="p-4 text-center">
-                        Bright Green
+                        Bright Cyan: #56d4dd
                     </p>
                 </div>
-                <div class="bg-brightPurple">
+                <div class="bg-green flex items-center justify-center">
                     <p class="p-4 text-center">
-                        Bright Purple
+                        Green: #3fb950
                     </p>
                 </div>
-                <div class="bg-brightRed">
+                <div class="bg-brightGreen flex items-center justify-center">
                     <p class="p-4 text-center">
-                        Bright Red
+                        Bright Green: #56d364
                     </p>
                 </div>
-                <div class="bg-brightWhite text-black">
+                <div class="bg-purple flex items-center justify-center">
                     <p class="p-4 text-center">
-                        Bright White
+                        Purple: #bc8cff
                     </p>
                 </div>
-                <div class="bg-brightYellow">
+                <div class="bg-brightPurple flex items-center justify-center">
                     <p class="p-4 text-center">
-                        Bright Yellow
+                        Bright Purple: #d2a8ff
                     </p>
                 </div>
-                <div class="bg-cursorColor">
+                <div class="bg-red flex items-center justify-center">
                     <p class="p-4 text-center">
-                        Cursor Color
+                        Red: #ff7b72
                     </p>
                 </div>
-                <div class="bg-cyan">
+                <div class="bg-brightRed flex items-center justify-center">
                     <p class="p-4 text-center">
-                        Cyan
+                        Bright Red: #ffa198
                     </p>
                 </div>
-                <div class="bg-green">
+                <div class="bg-yellow flex items-center justify-center">
                     <p class="p-4 text-center">
-                        Green
+                        Yellow: #d29922
                     </p>
                 </div>
-                <div class="bg-purple">
+                <div class="bg-brightYellow flex items-center justify-center">
                     <p class="p-4 text-center">
-                        Purple
-                    </p>
-                </div>
-                <div class="bg-red">
-                    <p class="p-4 text-center">
-                        Red
-                    </p>
-                </div>
-                <div class="bg-selectionBackground">
-                    <p class="p-4 text-center">
-                        Selection Background
-                    </p>
-                </div>
-                <div class="bg-yellow">
-                    <p class="p-4 text-center">
-                        Yellow
+                        Bright Yellow: #e3b341
                     </p>
                 </div>
             </div>

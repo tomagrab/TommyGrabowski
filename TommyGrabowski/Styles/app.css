@@ -193,11 +193,11 @@ hr {
 }
 
 .modal-title {
-  @apply text-xl font-semibold text-darkgray;
+  @apply text-xl font-semibold text-darkblue;
 }
 
 .modal-body {
-  @apply py-4 text-darkgray;
+  @apply py-4 text-darkblue;
 }
 
 .modal-footer {
@@ -206,6 +206,22 @@ hr {
 
 .modal-close-button {
   @apply text-lg cursor-pointer;
+}
+
+.info-content-overlay {
+  @apply fixed inset-0 bg-black bg-opacity-50 z-0;
+}
+
+.info-icon:hover ~ .info-content-overlay {
+  @apply opacity-50 block z-0;
+}
+
+.info-icon:hover ~ .info-content {
+  @apply block items-center justify-center bg-darkblue p-2 font-normal rounded-md z-10;
+}
+
+.info-icon:hover {
+  @apply z-10;
 }
 
 .input {
@@ -225,7 +241,7 @@ hr {
 }
 
 .quickgrid > tbody > tr:not(.modal-overlay):hover {
-  @apply bg-darkgray text-white;
+  @apply bg-darkblue text-white;
 }
 
 .quickgrid > tbody > tr:hover > td > a {
