@@ -584,6 +584,10 @@ video {
   position: fixed;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .inset-0 {
   inset: 0px;
 }
@@ -598,6 +602,10 @@ video {
 
 .top-0 {
   top: 0px;
+}
+
+.col-span-full {
+  grid-column: 1 / -1;
 }
 
 .flex {
@@ -642,6 +650,10 @@ video {
 
 .flex-shrink-0 {
   flex-shrink: 0;
+}
+
+.grow {
+  flex-grow: 1;
 }
 
 .grid-cols-1 {
@@ -828,6 +840,14 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
+}
+
+.pt-2 {
+  padding-top: 0.5rem;
 }
 
 .text-center {
