@@ -1,6 +1,10 @@
+@rendermode InteractiveServer
+
 <header class="flex items-center h-16 px-4">
     <div class="flex justify-start w-1/2">
-        <button class="h-8 w-8 flex justify-center items-center p-2 border rounded-md hover:bg-brightBlack transition-colors duration-300">
+        <button @onclick="@ShowSidebar"
+            class="h-8 w-8 flex justify-center items-center p-2 border rounded-md hover:bg-brightBlack transition-colors duration-300"
+        >
             <i class="fa-solid fa-bars text-white"></i>
         </button>
     </div>
@@ -9,10 +13,24 @@
             <a href="/">Tommy Grabowski</a>
         </h1>
     </div>
-    <div class="flex w-1/2"></div>
+    <div class="flex justify-end w-1/2">
+        <NavLink href="/about" class="btn-link">About</NavLink>
+    </div>
 </header>
 
-@code
-{
-    public EventCallback<bool> ShowSidebar { get; set; }
+<Sidebar
+    IsSidebarVisible="@IsSidebarVisible"
+    IsSidebarVisibleChanged="HandleSidebarVisibility"
+/>
+
+@code {
+    private bool IsSidebarVisible { get; set; } = false;
+    private void ShowSidebar()
+    {
+        IsSidebarVisible = true;
+    }
+    private void HandleSidebarVisibility(bool isVisible)
+    {
+        IsSidebarVisible = isVisible;
+    }
 }
