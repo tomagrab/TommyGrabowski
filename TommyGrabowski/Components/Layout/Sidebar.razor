@@ -5,17 +5,10 @@
     <div class="fixed inset-0 bg-black bg-opacity-50" @onclick="@HideSidebar"></div>
 }
 <aside class="@sidebarClass">
-    <div>
-        <div>
-            <h2>Menu</h2>
-        </div>
-        <div>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/counter">Counter</a></li>
-                <li><a href="/fetchdata">Fetch data</a></li>
-            </ul>
-        </div>
+    <div class="flex flex-col gap-2 p-4">
+        <SidebarNavLink Title="Home" Icon="fa-solid fa-home" Href="/" />
+        <SidebarNavLink Title="About" Icon="fa-solid fa-user" Href="/about" />
+        <SidebarNavLink Title="Projects" Icon="fa-solid fa-project-diagram" Href="/projects" />
     </div>
 </aside>
 
@@ -30,5 +23,5 @@
         await IsSidebarVisibleChanged.InvokeAsync(IsSidebarVisible);
     }
 
-    private string sidebarClass => $"fixed top-0 left-0 bottom-0 overflow-hidden transition-all duration-300 bg-darkblue {(IsSidebarVisible ? "w-40" : "w-0")}";
+    private string sidebarClass => $"fixed top-0 left-0 bottom-0 overflow-hidden transition-all duration-300 bg-darkblue rounded-tr-md ease-in-out rounded-br-md {(IsSidebarVisible ? "w-40" : "w-0")}";
 }
