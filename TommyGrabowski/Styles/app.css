@@ -28,31 +28,47 @@
   }
 }
 
-/* For Chrome, Edge, and Safari */
+/* Scrollbar size */
 ::-webkit-scrollbar {
-  width: 12px; /* width of the entire scrollbar */
-}
-
-::-webkit-scrollbar-track {
-  background: #f1f1f1; /* color of the tracking area */
-  border-radius: 10px;
+  width: 10px;
+  height: 10px;
+  transition: 1.0s;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #888; /* color of the scroll thumb */
-  border-radius: 10px; /* roundness of the scroll thumb */
-  border: 3px solid #f1f1f1; /* creates padding around the scroll thumb */
+  background-color: rgba(127, 127, 127, 0.6);
+  background-clip: padding-box;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  transition: 1.0s;
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background-color: #555; /* color of the scroll thumb when hovered over */
+::-webkit-scrollbar-thumb:vertical:hover,
+::-webkit-scrollbar-thumb:horizontal:hover {
+  background-color: rgb(110, 110, 110);
+  transition: 0.3s;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+
+
+::-webkit-scrollbar-thumb:vertical:active,
+::-webkit-scrollbar-thumb:horizontal:active {
+  background: rgba(95, 91, 91, 1);
+
+}
+
+::-webkit-scrollbar-corner {
+  background: none;
 }
 
 /* For Firefox */
 * {
-  scrollbar-width: thin; /* "auto" or "thin" */
-  scrollbar-color: #888 #f1f1f1; /* thumb and track color */
-  font-family: "Inter", sans-serif;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(127, 127, 127, 0.6) transparent;
 }
 
 body {
