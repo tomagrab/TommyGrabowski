@@ -656,6 +656,10 @@ video {
   height: calc(100dvh - 4rem);
 }
 
+.h-\[430px\] {
+  height: 430px;
+}
+
 .w-0 {
   width: 0px;
 }
