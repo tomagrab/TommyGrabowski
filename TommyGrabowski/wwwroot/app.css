@@ -616,6 +616,30 @@ video {
   top: 0px;
 }
 
+.left-\[rem\] {
+  left: rem;
+}
+
+.left-\[10rem\] {
+  left: 10rem;
+}
+
+.left-\[5rem\] {
+  left: 5rem;
+}
+
+.left-\[8rem\] {
+  left: 8rem;
+}
+
+.left-\[7rem\] {
+  left: 7rem;
+}
+
+.left-\[18rem\] {
+  left: 18rem;
+}
+
 .z-40 {
   z-index: 40;
 }
@@ -910,6 +934,14 @@ video {
 
 .pt-8 {
   padding-top: 2rem;
+}
+
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
 }
 
 .text-center {
